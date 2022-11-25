@@ -1,0 +1,175 @@
+@import "loader";
+@import "commun";
+    form
+    {
+        width: 100%;
+        height: 50px;
+        background-color: #EAEAEA;
+        box-shadow: inset 0px 7px 9px -6px #CECECE;
+        text-align: center;
+        input[type="text"]
+        {
+            text-align: center;
+            width: 37%;
+            border: none;
+            background-color: transparent;
+            margin-top: 15px;
+        }
+        input::placeholder
+        {
+            font-family: 'roboto', sans-serif;
+            color: black;
+            opacity: 1;
+        }
+        form .fa-solid
+        {
+            color: black;
+        }
+    }
+    .presentation
+    {
+        background-color: #f7f7f7;
+        height: 200px;
+        text-align: center;
+        padding: 45px;
+        padding-bottom: 70px;
+        h2
+        {
+            margin-top: 0;
+        }
+        .bouton{
+        @include button(60%, 16px);
+        }
+    }
+    .fonctionnement
+    {
+        margin: auto;
+        padding: 0 40px 30px 40px;
+        &__liste
+        {
+            text-align: center;
+            width: 100%;
+            display: grid;
+            row-gap: 25px;
+            @media(min-width: 768px){
+                grid-template-columns: repeat(2, 1fr) 32%;
+                column-gap: 40px;
+            }
+        }
+        &__element
+        {
+            font-size: 16px;
+            font-weight: 500;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            background-color: #f7f7f7;
+            box-shadow: $box-shadow;
+            border-radius: 20px;
+            gap: 30px;
+            &:hover{
+                box-shadow: $box-shadow-hover;
+                background-color: #F5EDFF;
+            }
+        }
+        &__num
+        {
+            position: absolute;
+            color: white;
+            background-color: #9356dc;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-left: -15px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__icone
+        {
+            color: #aeaeae;
+            padding-left: 30px;
+        }
+        .fa-store{
+            color: $couleur-primaire;
+        }
+    }
+    .carte__element a 
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .carte
+    {
+        background-color: #F7F7F7;
+        padding: 20px;
+        @media (min-width:768px){
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        &__titre
+        {
+            padding-left: 20px;
+        }
+        &__liste
+        {  
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-around;
+            @media (min-width: 768px){
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 20px;
+                column-gap: 40px;
+            }
+        }
+        &__element
+        {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: $box-shadow;
+            border-radius: 20px;
+            background-color: white;
+            margin-bottom: 20px;
+            &:hover{
+                box-shadow: $box-shadow-hover;
+            }
+        }
+        &__element img
+        {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px 20px 0 0;
+        }
+        &__badge
+        {
+            content: attr(title);
+            display: block;
+            position: absolute;
+            background-color: #99E2D0;
+            color: #008766;
+            border-radius: 2px;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+        }
+        &__description
+        {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 15px;
+        }
+        &__contenu
+        {
+            width: 90%;
+            line-height: 0.2;
+        }
+    }
