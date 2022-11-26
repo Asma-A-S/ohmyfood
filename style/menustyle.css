@@ -129,7 +129,7 @@ main {
 
 .fa-arrow-left {
   position: absolute;
-  left: 90px;
+  left: 8%;
   top: 20px;
   text-decoration: none;
   color: black;
@@ -150,7 +150,7 @@ main {
 }
 
 .menu {
-  padding: 30px;
+  padding: 20px;
   position: relative;
   top: -40px;
   background-color: #f2f2f2;
@@ -183,14 +183,6 @@ main {
 .menu__liste {
   width: 100%;
   font-family: "roboto", sans-serif;
-  transition: all 2000ms;
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 @media (min-width: 768px) {
   .menu__liste {
@@ -217,10 +209,18 @@ main {
   justify-content: space-between;
   align-items: center;
   line-height: 1.6;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   box-shadow: 5px 5px 8px 2px rgba(232, 232, 232, 0.75);
   cursor: pointer;
+  transition: all 2000ms;
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   /*animation: apparition-element 0.6s;
   animation-iteration-count: 1;
   animation-play-state: running;
@@ -244,6 +244,7 @@ main {
   box-sizing: border-box;
   line-height: 1.6;
   padding-right: 10px;
+  padding-left: 8px;
 }
 .menu__description h3 {
   margin-bottom: 0;

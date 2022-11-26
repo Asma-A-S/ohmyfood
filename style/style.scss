@@ -38,7 +38,8 @@
             margin-top: 0;
         }
         .bouton{
-        @include button(60%, 16px);
+        @include button(70%, 16px);
+        white-space: nowrap;
         }
     }
     .fonctionnement
