@@ -315,6 +315,7 @@ form form .fa-solid {
 }
 .presentation .bouton:hover {
   box-shadow: 5px 5px 30px 6px rgb(184, 181, 182);
+  background: linear-gradient(170deg, #ff79da 40%, #9356dc 100%);
 }
 
 .fonctionnement {
